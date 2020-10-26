@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#0097b9), to(#3a47d5));
+  background: linear-gradient(90deg, #0097b9 0%, #3a47d5 100%);
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  border-bottom: 1px solid #00d0ff42;
+  padding: 3% 0;
+}
+
+.form-container h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.form-container input {
+  padding: 10px 15px;
+  font-size: 1.2em;
+  outline: none;
+  margin-right: 20px;
+}
+
+.form-container button {
+  display: block;
+  padding: 10px 20px;
+  margin: 15px 0px 5px 33px;
+  position: absolute;
+  left: 25%;
+  width: 45.5%;
+  color: white;
+  border: none;
+  outline: none;
+  background: #2aad2a;
+  cursor: pointer;
+}
+
+.data-container {
+  margin-top: 8%;
+}
+
+.data-container h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.data-container table {
+  width: 46%;
+  margin-left: 27%;
+}
+
+.data-container th {
+  padding: 20px;
+  border: 1px solid #2aad2a;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
