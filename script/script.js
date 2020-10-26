@@ -11,7 +11,6 @@ const nameInput = inputs[0];
 const emailInput = inputs[1];
 const mobileInput = inputs[2];
 
-console.log(storeDataButton);
 
 class Employee{
     constructor(id,name,email,mobile)
@@ -52,8 +51,8 @@ class Employee{
                     <td>${email}</td>
                     <td>${mobile}</td>
                     <td>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <button class="edit">Edit</button>
+                        <button class="delete" data-id="${id}">Delete</button>
                     </td>
                     </tr>
                 `
@@ -72,4 +71,20 @@ storeDataButton.addEventListener('click', (e)=>{
     nameInput.value = '';
     emailInput.value = '';
     mobileInput.value = '';
+});
+
+dataContainer.addEventListener('click', (e)=>{
+    if(e.target.classList.contains('delete'))
+    {
+
+        //remove from locals
+        const id = +e.target.getAttribute("data-id");
+        const emps = JSON.parse(localStorage.getItem('employees'));
+        const newData = emps.filter(item => item.id !== id);
+        localStorage.setItem('employees', JSON.stringify(newData));
+        
+        // remove from html
+        e.target.parentElement.parentElement.remove();
+
+    }
 });

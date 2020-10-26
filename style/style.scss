@@ -3,7 +3,7 @@ body{
     margin: 0;
     text-align:center;
     font-family: 'Work Sans', sans-serif;
-    background: linear-gradient(90deg, #0097b9 0%, #3a47d5 100%);
+    background: linear-gradient(90deg, #007a95 0%, #212a92 100%);
     color: white;
 }
 h1{
@@ -53,14 +53,36 @@ button{
     table{
         width: 46%;
         margin-left: 27%;
+        border: 2px solid rgb(52, 206, 52);
+        border-collapse: collapse;
     }
+   
     th,
     td{
         padding: 20px;
-        border: 1px solid rgb(52, 206, 52);
         font-weight: 500;
+        border: 2px solid rgb(52, 206, 52);
     }
    td{
        font-weight: 300;
+       button{
+           padding: 10px 15px;
+           background: rgb(163, 46, 46);
+           color: white;
+           border: none;
+           cursor: pointer;
+           border-radius: 5px;
+           outline: none;
+           &:hover{
+               opacity: .9;
+           }
+           &:active{
+               opacity: 1;
+           }
+           &:nth-child(1){
+           background: rgb(0, 184, 77);
+           margin-right: 5px;
+           }
+       }
    }
 }
