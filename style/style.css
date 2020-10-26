@@ -27,7 +27,8 @@ h1 {
   margin-right: 20px;
 }
 
-.form-container button {
+.form-container button,
+.form-container #submit {
   display: block;
   padding: 10px 20px;
   margin: 15px 0px 5px 33px;
@@ -41,11 +42,13 @@ h1 {
   cursor: pointer;
 }
 
-.form-container button:hover {
+.form-container button:hover,
+.form-container #submit:hover {
   opacity: .9;
 }
 
-.form-container button:active {
+.form-container button:active,
+.form-container #submit:active {
   opacity: 1;
 }
 
