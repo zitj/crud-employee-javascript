@@ -36,6 +36,12 @@ button{
     outline: none;
     background: rgb(42, 173, 42);
     cursor: pointer;
+    &:hover{
+        opacity: .9;
+    }
+    &:active{
+        opacity: 1;
+    }
 }
 }
 .data-container{
@@ -48,9 +54,13 @@ button{
         width: 46%;
         margin-left: 27%;
     }
-    th{
+    th,
+    td{
         padding: 20px;
-        border: 1px solid rgb(42, 173, 42);
+        border: 1px solid rgb(52, 206, 52);
         font-weight: 500;
     }
+   td{
+       font-weight: 300;
+   }
 }

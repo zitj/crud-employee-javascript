@@ -41,6 +41,14 @@ h1 {
   cursor: pointer;
 }
 
+.form-container button:hover {
+  opacity: .9;
+}
+
+.form-container button:active {
+  opacity: 1;
+}
+
 .data-container {
   margin-top: 8%;
 }
@@ -55,9 +63,14 @@ h1 {
   margin-left: 27%;
 }
 
-.data-container th {
+.data-container th,
+.data-container td {
   padding: 20px;
-  border: 1px solid #2aad2a;
+  border: 1px solid #34ce34;
   font-weight: 500;
+}
+
+.data-container td {
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
